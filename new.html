@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Guide</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Local Guide</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Travelers</a></li>
+				<li><a href="#">Locals</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="search">
+			<h2>Find a local guide</h2>
+			<form>
+				<label for="location">Location:</label>
+				<input type="text" id="location" name="location">
+				
+				<label for="interests">Interests:</label>
+				<input type="text" id="interests" name="interests">
+				
+				<label for="travelDates">Travel Dates:</label>
+				<input type="date" id="travelDates" name="travelDates">
+				
+				<input type="submit" value="Search">
+			</form>
+		</section>
+		
+		<section id="results">
+			<h2>Search Results</h2>
+			<ul>
+				<li>
+					<img src="local.jpg" alt="Local Guide">
+					<h3>John Smith</h3>
+					<p>Location: Paris, France</p>
+					<p>Interests: History, Art, Food</p>
+					<p>Rating: 4.5 stars</p>
+					<a href="#">Contact</a>
+				</li>
+				<li>
+					<img src="local.jpg" alt="Local Guide">
+					<h3>Jane Doe</h3>
+					<p>Location: London, UK</p>
+					<p>Interests: Music, Shopping, Sightseeing</p>
+					<p>Rating: 5 stars</p>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 Local Guide</p>
+	</footer>
+	
+	<script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 1rem;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	margin: 2rem;
+}
+
+section {
+	margin-bottom: 2rem;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+form label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="submit"] {
+	padding: 0.5}
+    
+</style>
